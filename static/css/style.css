@@ -1255,6 +1255,14 @@ input[type="button"] {
 
 .tab-content {padding: 60px 20px 20px 20px;}
 
+/* Countdown
+*/
+
+.countdown{
+	font-size: 2em;
+	margin: 10px;
+	text-align: center;
+}
 
 /* Progress Bar
 =================================================================== */

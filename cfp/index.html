@@ -152,7 +152,7 @@
 Paper Registration Deadline:  November 8, 2013<br />
 Paper/full text poster Due:  November 15, 2013<br />
 Author Notification:  December 20, 2013<br />
-Camera-ready version Due:  January 10, 2014
+Camera-ready version Due:  January 17, 2014
                         </p>
 
                         <div class="title"><h3>CALL FOR PAPERS AND POSTERS:</h3></div>
@@ -209,16 +209,24 @@ Papers and posters are solicited on research issues, theories, and applications.
                         </p>
                         <p>
 <h3>IMPORTANT DATES:</h3>
-Paper Registration Deadline:       November 8, 2013 (11:59pm, EST)<br />
+Paper Registration Deadline:      November 8, 2013 (11:59pm, EST)<br />
 Full Paper/Poster Submission:     November 15, 2013 (11:59pm, EST)<br />
-Author Notification:                    December 20, 2013 (11:59pm, EST)
-
+Author Notification:              December 20, 2013 (11:59pm, EST)<br />
+Camera-ready version Due:         January 17, 2014
+"
                         </p>
                         <p>
 <h3>FORMAT AND SUBMISSION:</h3>
-SBP14 Conference Proceedings will be published in Lecture Notes in Computer Science (LCNS) by Springer. The papers must be in English and MUST be formatted according to the Springer-Verlag LNCS/LNAI guidelines. Sample LaTeX2e and WORD files are available at
+<p>
+    SBP14 Conference Proceedings will be published in Lecture Notes in Computer Science (LCNS) by Springer. The papers must be in English and MUST be formatted according to the Springer-Verlag LNCS/LNAI guidelines. Sample LaTeX2e and WORD files are available at <a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0</a>.
+</p>
 
-http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0.
+<p>To be in the proceedings we need three things from you assembled into a single zip file and upload to EasyChair by Friday, 17 Jan. 2014:<br />
+(1) a pdf of your LNCS formatted paper (no more than 8 pages), <br />
+(2) the source files used to create the pdf (MS Word .doc or .docx files, LaTeX files, etc.), and <br />
+(3) a signed and scanned Springer copyright release. <br />
+</p>
+
 <br /><br />
 Abstract and full text for both oral presentations and posters should be submitted electronically before the specified deadlines. The maximum length of papers is 8 pages.
                         </p>
@@ -281,7 +289,20 @@ It is anticipated that a limited number travel scholarships will be available on
                     <!-- start: Sidebar -->
                     <div id="sidebar">
 
+                        <h1 id="countdown" class="countdown"></h1>
 
+                        <a href="https://www.easychair.org/account/signin.cgi?conf=sbp2014" class="btn btn-block btn-info">Submit</a>
+                        
+                        <hr class="clean">
+
+                        <p><b>Checklist:</b><br />
+                            To be in the proceedings we need three things from you assembled into a single zip file and uploaded to EasyChair by <b>Friday, 17 Jan. 2014</b>:
+                            <ol>
+                                <li>a pdf of your LNCS formatted paper (no more than 8 pages), </li>
+                                <li>the source files used to create the pdf (MS Word .doc or .docx files, LaTeX files, etc.), and</li>
+                                <li>(3) a signed and scanned Springer copyright release.</li>
+                            </ol>
+                        </p>
 
                         <hr class="clean">
 
@@ -296,7 +317,9 @@ It is anticipated that a limited number travel scholarships will be available on
                             Paper Registration Deadline: Nov 8, 2013<br />
                             Full Paper/Poster Submission: Nov 15, 2013<br />
                             Author Notification: Dec 20, 2013</div>
-                            <div class="tab-content" id="tab2" style="display: none;">Abstract and full text for both oral presentations and posters should be submitted electronically before the specified deadlines. The maximum length of papers is 8 pages and should be submitted in PDF.  Submission website is open <a href="https://www.easychair.org/account/signin.cgi?conf=sbp2014">here</a></div>
+                            <div class="tab-content" id="tab2" style="display: none;">
+                                Abstract and full text for both oral presentations and posters should be submitted electronically before the specified deadlines. The maximum length of papers is 8 pages and should be submitted in PDF.  Submission website is open <a href="https://www.easychair.org/account/signin.cgi?conf=sbp2014">here</a>
+                            </div>
                         </div>
                         <!-- end: Tabs -->
 
@@ -532,6 +555,38 @@ It is anticipated that a limited number travel scholarships will be available on
   ga('create', 'UA-36899667-2', 'sbp-conference.org');
   ga('send', 'pageview');
 
+    // set the date we're counting down to
+    var target_date = new Date("Jan 17, 2014 23:59 EST").getTime();
+     
+    // variables for time units
+    var days, hours, minutes, seconds;
+     
+    // get tag element
+    var countdown = document.getElementById("countdown");
+     
+    // update the tag with id "countdown" every 1 second
+    setInterval(function () {
+     
+        // find the amount of "seconds" between now and target
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+     
+        // do some time calculations
+        days = parseInt(seconds_left / 86400);
+        seconds_left = seconds_left % 86400;
+         
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+         
+        minutes = parseInt(seconds_left / 60);
+        seconds = parseInt(seconds_left % 60);
+         
+        // format countdown string + set tag value
+        countdown.innerHTML = days + " days, " + hours + " hours left";
+     
+    }, 1000);
+     
 </script>
+
 </body>
 </html>
