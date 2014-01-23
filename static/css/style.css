@@ -183,16 +183,16 @@ a {
 }
 
 .box:hover {
-	background: #f3705a;
-	color: #fff;
+	background: #F3F0E5;
+	color: #000;
 }
 
 .box:hover i {
-	color: #fff;
+	color: #000;
 }
 
 .box:hover h3 {
-	color: #fff;
+	color: #000;
 }
 
 .contact {
