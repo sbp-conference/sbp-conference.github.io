@@ -2612,6 +2612,10 @@ li.current {
 
 }
 
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle {
+	background-color: #888;
+}
+
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
 =================================================================== */
 @media only screen and (max-width: 479px) {
