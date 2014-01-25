@@ -183,16 +183,16 @@ a {
 }
 
 .box:hover {
-	background: #f3705a;
-	color: #fff;
+	background: #F3F0E5;
+	color: #000;
 }
 
 .box:hover i {
-	color: #fff;
+	color: #000;
 }
 
 .box:hover h3 {
-	color: #fff;
+	color: #000;
 }
 
 .contact {
@@ -2610,6 +2610,10 @@ li.current {
 		width:83%;
 	}
 
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle {
+	background-color: #888;
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
