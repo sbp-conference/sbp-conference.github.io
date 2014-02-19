@@ -5,9 +5,8 @@
     <!-- start: Meta -->
     <meta charset="utf-8">
     <title>SBP 2014</title>
-    <meta name="description" content="Red Box Bootstrap Theme"/>
-    <meta name="keywords" content="Template, Theme, web, html5, css3, Bootstrap" />
-    <meta name="author" content="Łukasz Holeczek from creativeLabs"/>
+    <meta name="description" content="SBP Conference"/>
+    <meta name="keywords" content="Social Computing, Behavioral-Cultural Modeling, Research, Social Network Analysis, Networks, Social Behavior, NIH" />
     <!-- end: Meta -->
 
     <!-- start: Mobile Specific -->
@@ -31,12 +30,25 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+
     <!-- end: CSS -->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+<style>
+#page-wrap { width:960px; margin: 60px auto; }
+#map_canvas { width: 100%; height: 650px; float: right; position: relative; z-index: 30 !important; }
+
+#locations { list-style: none; width: 300px; float: left;  }
+#locations li { padding: 10px; width: 800px; float: left; position: relative; z-index: 20; }
+#locations li:hover, #locations li.hover { background: #EFEFEF 120px 0 repeat-y; }
+#locations li:hover h3, #locations li.hover h3 { color: #C81350; text-shadow: 0 1px 0px rgba(255,255,255,0.3); }
+
+.longdesc { display: none; }
+
+</style>
 
 </head>
 <body>
@@ -71,7 +83,7 @@
                             <div class="nav-collapse collapse">
                                 <ul class="nav">
                                     <li><a href="/">Home</a></li>
-                                    <li><a href="/about">About</a></li>
+                                    <li class="active"><a href="/about">About</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown">Information<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
@@ -93,7 +105,6 @@
                                             <li><a href="/tutorial">Tutorials</a></li>
                                         </ul>
                                     </li>
-                                    <li class="active"><a href="/challenge">Challenge</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -112,14 +123,14 @@
     <!--end: Header-->
 
 <!-- start: Page Title -->
-<div id="page-title">
+    <div id="page-title">
 
         <div id="page-title-inner">
 
             <!-- start: Container -->
             <div class="container">
 
-                <h2>Computing Human Society through the Global News</h2>
+                <h2>Travel</h2>
 
             </div>
             <!-- end: Container  -->
@@ -138,186 +149,99 @@
 
             <div class="row">
 
-                <div class="span8">
+                <div class="span12">
 
                     <!-- start: About Us -->
                     <div id="about">
                         <h4>
-            Grand Data Challenge of 2014 International Conference on
-            Social Computing, Behavioral-Cultural Modeling, & Prediction (SBP14)<br />
-            April 2 – April 4, 2014, UCDC Center,  Washington DC, USA
+                            2014 International Conference on Social Computing, Behavioral-Cultural Modeling, & Prediction (SBP14)<br />
+                            April 1 – April 4, 2014, UCDC Center,  Washington DC, USA
                         </h4>
-<p>We invite participants to explore the Global Database of Events, Language and Tone (GDELT), an expansive set containing a quarter-billion geo-referenced political news events covering the whole world since 1979, describing <u>who</u> did <u>what</u> to <u>whom</u> <u>when</u> and <u>where</u>, and use GDELT to</p>
-<ul class="square_list">
-  <li> Demonstrate the applications of spatial, temporal and network methodologies and their interactions, </li>
-  <li> Identify the latent “influencers” of social movement and media-based political competition, </li>
-  <li> Experimentally validate and improve models for social phenomena, </li>
-  <li> Visualize social movements of different types on all levels at a glance, </li>
-  <li> Propose solutions to societal problems including health care and public safety using data- and model- based reasoning, and </li>
-  <li> To suggest new creative applications using the GDELT data. </li>
-</ul>
-<p>&nbsp;</p>
+            <p></p>
 
-<div class="title">
-  <h3>The Dataset</h3></div>
+            <p>
+                The 2013 International Conference on Social Computing, Behavioral-Cultural Modeling, and Prediction (SBP) 2013 will be held in downtown Washington, D.C. at the University of California DC Center <a href="http://www.ucdc.edu" target="_blank">(UCDC)</a>, 1608 Rhode Island Ave NW  Washington, DC 20036, close to Farragut North, Farragut West, or Dupont Circle Metro stations.<br />
+            </p>
+                <iframe width="700" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=Farragut+West+Metro+Station,+Washington,+DC&amp;daddr=1608+Rhode+Island+Ave+NW,+Washington,+DC+20036+(UC+Washington+Center)&amp;geocode=FXaWUQIdhnho-ynpOYj-u7e3iTEpvJQMv2qB-w%3BFVKrUQIdPoBo-ymLX8OewLe3iTHBX4DV-TAaBg&amp;aq=1&amp;oq=farra&amp;sll=38.9041,-77.038535&amp;sspn=0.009451,0.017359&amp;hl=en&amp;dirflg=w&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=38.9041,-77.038535&amp;spn=0.00554,0.00185&amp;output=embed"></iframe><br /><small>
+        <a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=Farragut+West+Metro+Station,+Washington,+DC&amp;daddr=1608+Rhode+Island+Ave+NW,+Washington,+DC+20036+(UC+Washington+Center)&amp;geocode=FXaWUQIdhnho-ynpOYj-u7e3iTEpvJQMv2qB-w%3BFVKrUQIdPoBo-ymLX8OewLe3iTHBX4DV-TAaBg&amp;aq=1&amp;oq=farra&amp;sll=38.9041,-77.038535&amp;sspn=0.009451,0.017359&amp;hl=en&amp;dirflg=w&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=38.9041,-77.038535&amp;spn=0.00554,0.00185" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 
-<p>
-    The GDELT database (<a href="http://gdelt.utdallas.edu/">http://gdelt.utdallas.edu/</a>) is divided into three core data streams, capturing physical activity, counts of key incidents like death, and a graph structure capturing the latent and physical aspects of the global news into a single computable network:
-</p>
+        <p><strong>Metro:</strong> Take either the <font color="#ff0000"><b>Red</b></font> or <font color="#ff9900"><b>Orange</b></font>/<font color="#0000ff"><b>Blue</b></font> lines. From the <a href="http://www.wmata.com/metrorail/systemmap.cfm" style="color: rgb(0, 0, 153); text-decoration: none;" target="_blank">Farragut North</a> Metro station on the <font color="#ff0000"><b>Red</b></font> line or <a href="http://www.wmata.com/metrorail/systemmap.cfm" target="_blank">Farragut West</a> on the <font color="#ff9900"><b>Orange</b></font>/<font color="#0000ff"><b>Blue</b></font> line, walk approximately 3 blocks north along 17th Street.
 
-<p>
-    <strong>Event Data</strong>:  With coverage beginning January 1, 1979, this dataset consists of a quarter-billion geo-referenced dyadic “event records” covering all countries in the world 1979 to present, capturing who did what to whom, when, and where.  All events are captured in the CAMEO taxonomy of roughly 300 categories of global political behavior from riots and protests to diplomatic exchanges and peace appeals, covering all countries 1979-present, with daily updates of around 100,000 new events each day.   Special emphasis has been placed on enhanced coverage of Africa and Latin America, producing one of the first cross-national datasets for South America and the most extensive database for Africa.  The base CAMEO taxonomy has been enriched with the new CAMEO Religious and Ethnic taxonomies and all events are geo-referenced to the city level.   Each record contains 58 fields capturing a range of information about the event and actors involved. </p>
 
-<p>
-    <strong>Count Data</strong>:  Beginning October 1, 2013, this data records mentions of counts of things with respect to a set of predefined categories such as a number of protesters, a number killed, or a number displaced or sickened.  There are eleven categories currently supported: Affected, Arrested, Displaced, Evacuation, Kidnapped, Killed, Protested, Refugees, Seized, Sickened, Wounded.  Such counts may occur independently of events in the Event Data stream, such as mentions of those killed in industrial accidents (which are not recorded in the CAMEO event taxonomy) or those displaced by a natural disaster or sickened by a disease epidemic.  In this way, the Count Data can be used for example to produce a daily “Death Tracker” to map all mentions of death across the world each day, or an “Affected Tracker” to indicate how many persons were sickened/displaced/stranded each day (at least as recorded in the global news media).  Similar to the Event Data, each Count is geo-referenced to the city level globally. </p>
+        <p><strong>Driving:</strong> For driving directions to the Center at 1608 Rhode Island Avenue, NW, please <a href="http://maps.google.com/maps?q=1608+Rhode+Island+Avenue,+NW+Washington,+DC+20036&amp;client=safari&amp;oe=UTF-8&amp;hnear=1608+Rhode+Island+Ave+NW,+Washington,+District+of+Columbia,+20036&amp;gl=us&amp;t=m&amp;z=16&amp;vpsrc=0" target="_blank">click here</a>.</p>
 
-<p>
-    <strong>Global Knowledge Graph</strong>:  Beginning October 1, 2013, this data expands GDELT’s ability to quantify global human society beyond cataloging physical occurrences towards actually representing the latent dimensions, geography, and network structure of the global news. To sum up the Global Knowledge Graph in a single sentence, it is an attempt to connect the people, organizations, locations, counts, themes, news sources, and events appearing in the news media across the globe each day into a single massive network that captures what’s happening around the world, what its context is and who’s involved, and how the world is feeling about it, each day.  The Global Knowledge Graph is a network structure connecting all persons, organizations, locations, emotions, themes, counts, events, and sources together each day in the news media into a single network structure and captures the cultural narratives that envelope the global information stream. </p>
+        <p><strong>Parking:</strong> There is street and garage parking nearby. An outdoor pay surface parking lot is available next door and there are covered garages in the surrounding blocks on M street and 17th Street. Nearby hotels such as the <a href="http://capitalhotelswdc.com/BeaconHotelWDC_com/" target="_blank">Beacon Hotel</a>, <a href="http://marriott.com/property/propertypage/wasem?WT_Ref=mi_left" target="_blank">Courtyard Washington Embassy Row</a>, <a href="http://www.doylecollection.com/locations/washington_dc_hotels/the_dupont_circle_hotel.aspx">The Dupont Circle Hotel</a> and <a href="http://www.thejeffersonwashingtondc.com/" target="_blank">The Jefferson</a> provide valet parking to their guests.</p>
 
-<p>Each morning the Global Knowledge Graph system processes each news article from the previous day (regardless of whether it contained any events in the Event Data file) and compiles a list of all person names, organization names, locations, overall emotion, any mention of a count of something (the Count Data file above), any mention of an event (the Event Data file above), and any mention of a predefined catalog of themes (over 150 themes as of this writing) within that article.  It then constructs a network structure over all of these features based on co-occurrence, allowing a vast array of spatial, temporal, and network analyses, from mapping themes, people, and groups over space, to looking at the connections among people and analyzing media-derived influencer networks around themes and space.  The Global Knowledge Graph records any mention of a major terror group, major political party around the world, major infectious disease, etc., irrespective of any connection with an event. This can be used, for example, to create a media-based proxy of political competition through measuring how often each political party receives media coverage and how the parties are contextualized with one another, including across countries. Other applications include mapping a theme over space to capture change over time and how locations are connected, plotting movements of political candidates during an election (along with the themes they are associated with at each location), and constructing influencer networks around the people and organizations associated with specific topics and locations.</p>
-<div class="title">
-  <h3>Suggested Topics for Submissions</h3>
-</div>
-<p>The SBP 2014 challenge is open-ended; submissions will be evaluated based on theoretical grounding, use of evidence, creativity, and impact. We invite researchers to submit entries of all types. Some suggested topics include</p>
-<ul class="square_list">
-  <li> New spatial, temporal, and network analytic methodologies and algorithms that can cope with the vast scale of the GDELT catalog.  Upwards of a billion location mentions exist in the event database, while just a small slice of the knowledge graph can contain tens or even hundreds of millions of connections over space, time, and context. </li>
-  <li> New spatial analytic methodologies that can better take into account change over time and non-spatial distances (such as co-occurrences and semantic similarity between locations). </li>
-  <li> New network methodologies that better incorporate spatio-temporal information and can reason in spatial, temporal, and semantic dimensions. </li>
-  <li> New network methodologies that better incorporate the diversity of actor and relationship types in the data. </li>
-  <li> New network methodologies for constructing edges from the data and for distributing actor and edge attributes onto the graph in ways that support novel analytic approaches. </li>
-  <li> New methods of identifying “influencers” and deriving physical influencer networks from media influencer networks.  Calibration of the physical and media-derived pictures of society. </li>
-  <li> Expanding our understanding of critical media effects like Agenda Setting, Selection Bias, Media Fatigue, and Helicopter Journalism through cross-comparison of global discussion. </li>
-  <li> Multi-signal forecasting incorporating structural and latent dimensions. </li>
-  <li> Translating the quantitative methodologies needed to work with GDELT into the often qualitative research questions of many social sciences and humanities disciplines and connectivity of these methodologies to the core theoretical foundations of those fields. </li>
-  <li> Testing hypotheses and models for social phenomena, including those developed during the age of information scarcity, on a larger scale using the GDELT data and proposing improvements to such models. </li>
-  <li> New visualization methodologies that support real time and actionable interaction with the massive size and denseness of the GDELT data, especially approaches that allow both macro-level pattern identification and micro-level exploration within the same interface, and system that incorporate spatial, temporal, thematic, and role-based filtering. </li>
-  <li> Forecasting and predictive modeling.</li>
-</ul>
-<p>&nbsp;</p>
+        <div class="title"><h3>Nearby Hotels</h3></div>
 
-<div class="title">
-  <h3>Background --- Using News Media to Understand our Media-Mediated Society</h3></div>
+            <div class="row">
 
-    <p>
-        The global news media has long been used as a key archive of human society, both as a catalog of societal activity and of the beliefs and narratives surrounding, causing, and contextualizing it.  The transition of the news industry over the past quarter century to digital publication and the corresponding rise of internet publishing has brought with it an exponential rise in the accessibility of news media from around the world.  The constant stream of daily life that flows across the world’s news media provides a vast archive of societal-scale activities from riots and military strikes to peace appeals and diplomatic exchanges, together with rich contextual background information that provide detailed narratives of each region and culture.  Few of us have visited Iraq, Afghanistan, or Syria recently, yet through the vast interconnected web of the world’s news media we can instantly access the latest developments in those countries or almost any other corner of the globe and understand how the world is reacting in real time with just a mouse click.
-    </p>
-    <p>
-        This vast volume of information captured in the world’s news poses at once great opportunities, giving ever-increasing access to the real time behavior and beliefs of the world’s citizenry, but also requires a fundamental shift in how this information is understood and employed.  The concept of quantifying human behavior into discrete “occurrences” known as events has not been widely used outside of the political science and economics disciplines, while latent co-occurrence graph structures over people, organizations, locations, themes, and events have not previously been available at scale for academic research.  New methodologies are needed to translate the approaches made possible by the quantification of the world’s news media into the theoretical constructs and methodologies most common in these fields.  For example, leadership “influencer” networks constructed externally of an organization from its media coverage differ in fundamental ways from those constructed internally – how does one adapt the literature of SNA metrics, theories, and analytic processes to take these differences into account?  How does one translate the way in which the geographic affiliation of a particular topic changes over time in the news into a map of the spread of that idea or belief across communities?  The media itself presents an imperfect record of society, with key media effects from selection bias to media fatigue, agenda setting to helicopter journalism having profound impacts on what is recorded and how it is represented.  How can the function of these processes be modeled at scale?  Can latent dimensions such as emotion, thematic context, and structural contextualization be used as surrogates for national stability or as forecasting signals of future behavior?
-    </p>
-    <p>
-        The greatest challenge today no longer lies in the acquisition of data, but rather in how best to synthesize and integrate in a timely and actionable way the rapidly increasing pace and volume of material available using analysis and interaction methodologies developed in the by-gone era of information scarcity.  For example, few mapping applications today support real time exploration of even millions of points, while most spatial analytic methods fail to scale beyond hundreds of thousands of points in tractable time.  Few spatial methods support non-spatial connectivity (such as through parallel semantic connectedness of locations), while few network methods incorporate spatial knowledge and both network and spatial methodologies largely lack consistent support for change over time other than through fixed snapshots.  No major global network dataset has existed thus far that attempts to quantify the picture of society presented by the global news media over a longitudinal period of time.  In all, our present analytic methodologies were built to make sense of scarcity, yet now must make sense of a deluge of actors, attributes, and the relationships among them – how do we take the first steps towards computing at a “societal scale”?
-    </p>
-    <p>
-        The Global Database of Events, Language, and Tone (GDELT) is an initiative to translate the textual narrative of human society as captured by the global news media to construct a quantitative catalog of human societal-scale behavior and beliefs across all countries of the world over the last quarter-century down to the city level globally, to make all of this data freely available for open research, and to provide daily updates to create the first "real time social sciences earth observatory."  Today nearly a quarter-billion geo-referenced dyadic “event records” capture global behavior in more than 300 categories covering 1979 to present with daily updates (this will be expanded back to 1800 in 2014).  Each event record is a dyadic entry that captures who did what to whom, where, and when.  This is combined with a massive array of thematic, spatial, entity, and network indicators capturing both what is happening around the world and the underlying actors, beliefs, and contextualization.  GDELT’s historical back file and daily updates expand current understanding of social systems beyond small static snapshots of particular locations or time periods towards global longitudinal time series that incorporate the nonlinear behavior and feedback effects that define human interaction and greatly enrich fragility indexes, early warning systems, and forecasting efforts.
-    </p>
-    &nbsp;
+                <div class="span6">
 
-    <div class="title">
-      <h3>Judging Criteria</h3></div>
+            <ul id="locations">
+            <li data-geo-lat="38.908240" data-geo-long="-77.036196">
+              <h3>Rouge Hotel</h3>
+              <p>1315 16th Street, NW (Across Scott Circle)<br />
+                (202) 939-6435 / <a href="http://www.rougehotel.com/">Link</a>
+              </p>
+              <p class="longdesc">In-house Reservations 1 (800) 556-6087 or (800) 738-1202.<br /> Reservations can also be made online through the Hotel Rouge's Website with the Rate Access Code of "UCD" (may be unavailable) (<a href="http://www.rougehotel.com/">rougehotel.com</a> &#8211;click on 'reservations').</em></p>
+            </li>
 
-    <p>
-        The challenge submissions will be judged by an interdisciplinary panel of scholars. Winners will be invited to present their submissions in a special session at the SBP conference. Travel reimbursement of up to $1000 is available for presenters.
-    </p>
+            <li data-geo-lat="38.9080583" data-geo-long="-77.0354241">
+              <h3>Doubletree Hotel</h3>
+              <p>1515 Rhode Island Ave. NW (0.17 miles from UCDC)<br />
+                202-232-7000 / <a href="http://www.doubletreewashington.com">Link</a></p>
+              <p class="longdesc">
+                For best available rate ask for Caroline Guzha and mention that you are with the University of California Washington Center (202) 521-7175<br /> </p>
+            </li>
 
-    <div class="title">
-      <h3>Awards</h3></div>
+            <li data-geo-lat="38.90934" data-geo-long="-77.02949">
+              <h3>Bed and Breakfast DC</h3>
+              <p><a href=http://www.bedandbreakfastdc.com/>Link</a> </p>
+              <p class="longdesc">There are a number of B&B's near Logan and Dupont Circle, and many others are metro accessible.
+            </li>
 
-    <p>
-        In addition to travel reimbursement, <br />
-        1. Winner will receive $300<br />
-        2. Runner up will receive $200
-    </p>
+            <li data-geo-lat="38.907049" data-geo-long="-77.0380497">
+              <h3>Beacon Hotel &amp; Corporate Quarters</h3>
+              <p>1615 Rhode Island Ave. NW (Across the street – very convenient)<br />
+               202-296-2100 / <a href="http://capitalhotelswdc.com/BeaconHotelWDC_com/">Link</a>
+              </p>
+              <p class="longdesc"></p>
+            </li>
 
-    <div class="title">
-      <h3>Submission Information</h3></div>
+            <li data-geo-lat="38.9031219" data-geo-long="-77.0359328">
+              <h3>Capital Hilton</h3>
+              <p>1001 16th St. NW (0.3 miles from UCDC)<br />
+                202-393-1000 / <a href="http://www.hilton.com/en/hi/hotels/index.jhtml?ctyhocn=DCASHHH">Link</a></p>
+              <p class="longdesc"></p>
+            </li>
 
-    <ul>
-        <li>
-            Submission Website: <a href="https://www.easychair.org/conferences/?conf=sbp2014granddatachal">https://www.easychair.org/conferences/?conf=sbp2014granddatachal</a>
-        </li>
-        <li>
-            Winners will be invited to present their work at the SBP 2014 main conference, and their travel expenses reimbursed by SBP for up to US$1000.
-        </li>
-    </ul>
+            <li data-geo-lat="38.9066662" data-geo-long="-77.0369714">
+              <h3>Courtyard Washington Embassy Row – by Marriott</h3>
+              <p>1600 Rhode Island Ave. NW (Next Door to UCDC)<br />
+                202-293-8000 / <a href="www.marriott.com/property/propertyPage/WASEM">Link</a><br /></p>
+            </li>
+
+            <li data-geo-lat="38.9079942" data-geo-long="-77.0347446">
+              <h3>Holiday Inn</h3>
+              <p>1501 Rhode Island Ave NW<br />
+                (202) 797-1078<br /></p>
+            </li>
+
+        </ul>
+        </div>
+        <div class="span6">
+            <div id="map_canvas"></div>
+        </div>
+
+        </div>
+
+
                     </div>
                     <!-- end: About Us -->
 
-                </div>
-
-                <div class="span4">
-
-                    <!-- start: Sidebar -->
-                    <div id="sidebar">
-
-                        <h1 id="countdown" class="countdown"></h1>
-
-                        <a href="https://www.easychair.org/conferences/?conf=sbp2014granddatachal" class="btn btn-block btn-info">Submit</a>
-
-                        <hr class="clean">
-
-                        <!-- start: Tabs -->
-                        <ul class="tabs-nav">
-                            <li class="active"><a href="#tab1"><i class="mini-ico-glass"></i>Important Dates</a></li>
-                            <li><a href="#tab2"><i class="mini-ico-list"></i> Instructions</a></li>
-                        </ul>
-
-                        <div class="tabs-container">
-                            <div class="tab-content" id="tab1" style="display: block;">
-                            Submission Deadline: January 12, 2014<br />
-                            Author Notification: February 16, 2014<br /></div>
-                            <div class="tab-content" id="tab2" style="display: none;">The submissions must be in English and must be formatted according to the <a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">Springer-Verlag LNCS/LNAI guidelines </a>. The maximum length of papers is 8 pages and should be submitted in PDF. Submission website is open <a href="https://www.easychair.org/conferences/?conf=sbp2014granddatachal">here</a></div>
-                        </div>
-                        <!-- end: Tabs -->
-
-                        <hr class="clean">
-
-                        <div class="title"><h3>Downloading GDELT</h3></div>
-                        <p>
-                            <b>Daily Event Dataset</b><br />
-                            This data is provided as a comma-separated value (CSV) dataset. Each row in the file is an event, and the columns correspond to the guide from GDELT, <a href="http://gdelt.utdallas.edu/data/documentation/GDELT-Data_Format_Codebook.pdf">available here</a>. To obtain the daily event dataset, visit the <a href="http://gdelt.utdallas.edu/data/dailyupdates/?O=D">following page</a>. Here, you can download daily updated files from April 1, 2013.<br /><br />
-                            <b>Historical Event Dataset</b><br />
-                            This dataset is another CSV of historical events (those that happened from 1979 - April 1, 2013). To get historical event data, <a href="http://gdelt.utdallas.edu/data/backfiles/?O=D">visit here</a>.
-                            Note: The columns here are slightly different than above. For the column guide for this dataset <a href="http://gdelt.utdallas.edu/data/documentation/GDELT-Data_Format_Codebook.pdf">visit here</a>.<br /><br />
-                            <b>Global Knowledge Graph</b><br />
-                            Provided in CSV format, it can be <a href="http://gdelt.utdallas.edu/data/gkg/?O=D">downloaded here</a>. For information about the columns in the dataset and some general background about the dataset overall, you can read this <a hreef="http://gdelt.utdallas.edu/data/documentation/GDELT-Global_Knowledge_Graph_Codebook.pdf">cookbook</a>.
-                            <em>Note: Each day produces two files: the counts file and the graph file.</em>
-                        </p>
-
-                        <hr class="clean">
-
-                        <div class="title"><h3>Getting Started with GDELT</h3></div>
-                        <p>
-                            The best way to start using GDELT is highly dependent on the type of analysis you wish to perform. Most users will want to first open the data in Excel. Because the data is provided as a CSV, this can be accomplished by simply opening the file in Excel. One complication comes in opening the Global Knowledge Graph files. A detailed introduction to this process can be <a href="http://gdelt.utdallas.edu/data/documentation/GDELT-Global_Knowledge_Graph_MakeMasterGraphSampleScript.pdf">found here.</a>
-                        </p>
-
-                        <hr class="clean">
-
-                        <div class="title"><h3>Discussion</h3></div>
-                         <div id="disqus_thread"></div>
-                            <script type="text/javascript">
-                                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                                var disqus_shortname = 'sbp2014datachallenge'; // required: replace example with your forum shortname
-
-                                /* * * DON'T EDIT BELOW THIS LINE * * */
-                                (function() {
-                                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                                })();
-                            </script>
-                            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-                    </div>
-                    <!-- end: Sidebar -->
-
-                </div>
-
-            </div>
-
-
-
-            <!-- end: Row -->
+                </div><!-- span12 -->
+            </div><!-- row -->
 
         </div>
         <!--end: Container-->
@@ -463,7 +387,7 @@
 <script type="text/javascript">
     WebFontConfig = {
     google: {
-        families: ['Poiret+One::latin', 'Lato', 'Walter+Turncoat::latin', 'Muli', 'Swanky+and+Moo+Moo', 'Cardo']
+        families: ['Poiret+One::latin', 'Lato', 'Muli', 'Cardo']
     }
     };
     (function() {
@@ -489,10 +413,84 @@
 <script src="/static/js/slider.js"></script>
 <script src="/static/js/fancybox.js"></script>
 <!--script src="/static/js/twitter.js"></script-->
+<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=true'></script>
 <script src="/static/js/jquery.placeholder.min.js"></script>
 <script defer="defer" src="/static/js/custom.js"></script>
 <!-- end: Java Script -->
 
+<script type='text/javascript'>
+
+    $(function() {
+
+      var dc = new google.maps.LatLng(38.908240, -77.036196),
+          pointToMoveTo,
+          first = true,
+          curMarker = new google.maps.Marker({}),
+          $el;
+
+      var myOptions = {
+          zoom: 15,
+          center: dc,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+
+      var map = new google.maps.Map($("#map_canvas")[0], myOptions);
+
+      $("#locations li").mouseenter(function() {
+
+        $el = $(this);
+
+        if (!$el.hasClass("hover")) {
+
+          $("#locations li").removeClass("hover");
+          $el.addClass("hover");
+
+          if (!first) {
+
+            // Clear current marker
+            curMarker.setMap();
+
+            // Set zoom back to Chicago level
+            // map.setZoom(10);
+          }
+
+          // Move (pan) map to new location
+          pointToMoveTo = new google.maps.LatLng($el.attr("data-geo-lat"), $el.attr("data-geo-long"));
+          map.panTo(pointToMoveTo);
+
+          var goldStar = {
+                path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+                fillColor: '#C00',
+                fillOpacity: 0.8,
+                scale: 0.1,
+                strokeColor: '#C00',
+                strokeWeight: 2
+              };
+
+          curMarker = new google.maps.Marker({
+            position: map.getCenter(),
+            icon: goldStar,
+            map: map
+          });
+
+          // On click, zoom map
+          google.maps.event.addListener(curMarker, 'click', function() {
+             map.setZoom(16);
+          });
+
+
+          // No longer the first time through (re: marker clearing)
+          first = false;
+        }
+
+      });
+
+      $("#locations li:first").trigger("mouseenter");
+
+    });
+
+  </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -503,50 +501,5 @@
   ga('send', 'pageview');
 
 </script>
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'sbp2014datachallenge'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-
-
-    // set the date we're counting down to
-    var target_date = new Date("Jan 12, 2014 23:59 EST").getTime();
-    /* REMOVE COUNTDOWN AFTER DEADLINE PASSED
-    // variables for time units
-    var days, hours, minutes, seconds;
-
-    // get tag element
-    var countdown = document.getElementById("countdown");
-
-    // update the tag with id "countdown" every 1 second
-    setInterval(function () {
-
-        // find the amount of "seconds" between now and target
-        var current_date = new Date().getTime();
-        var seconds_left = (target_date - current_date) / 1000;
-
-        // do some time calculations
-        days = parseInt(seconds_left / 86400);
-        seconds_left = seconds_left % 86400;
-
-        hours = parseInt(seconds_left / 3600);
-        seconds_left = seconds_left % 3600;
-
-        minutes = parseInt(seconds_left / 60);
-        seconds = parseInt(seconds_left % 60);
-
-        // format countdown string + set tag value
-        countdown.innerHTML = days + " days, " + hours + " hours left";
-
-    }, 1000);
-    */
-    </script>
 </body>
 </html>
