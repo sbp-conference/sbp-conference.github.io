@@ -5,9 +5,8 @@
     <!-- start: Meta -->
     <meta charset="utf-8">
     <title>SBP 2014</title>
-    <meta name="description" content="Red Box Bootstrap Theme"/>
-    <meta name="keywords" content="Template, Theme, web, html5, css3, Bootstrap" />
-    <meta name="author" content="Łukasz Holeczek from creativeLabs"/>
+    <meta name="description" content="SBP Conference"/>
+    <meta name="keywords" content="Social Computing, Behavioral-Cultural Modeling, Research, Social Network Analysis, Networks, Social Behavior, NIH" />
     <!-- end: Meta -->
 
     <!-- start: Mobile Specific -->
@@ -80,6 +79,7 @@
                                             <li><a href="/cft/">Call for Tutorials</a></li>
                                             <li><a href="/committee/">Committee</a></li>
                                             <li ><a href="/downloads">Downloads</a></li>
+                                            <li><a href="/publishersTable">Publishers' Table</a></li>
                                             <li><a href="/registration">Registration</a></li>
                                             <li><a href="/travel">Travel</a></li>
                                         </ul>
@@ -93,7 +93,7 @@
                                             <li><a href="/tutorial">Tutorials</a></li>
                                         </ul>
                                     </li>
-                                    <li ><a href="/challenge">Challenge</a></li>
+                                    <li><a href="/challenge">Challenge</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                         <h4>
             2014 International Conference on
             Social Computing, Behavioral-Cultural Modeling, & Prediction (SBP14)<br />
-            April 2 – April 4, 2014, UCDC Center,  Washington DC, USA
+            April 1 – April 4, 2014, UCDC Center,  Washington DC, USA
                         </h4>
                         <p>
 <div class="title"><h3>IMPORTANT DATES:</h3></div>
@@ -230,7 +230,7 @@ Camera-ready version Due:         January 17, 2014
 Abstract and full text for both oral presentations and posters should be submitted electronically before the specified deadlines. The maximum length of papers is 8 pages.<br /><br />
 <b>PUBLICATION</b>
                     <p>
-                        The conference proceedings will be published in <a href="http:// www.springer.com/lncs">Lecture Notes in Computer Science</a> series, available from <a href="http://www.springer.com">Springer</a>. 
+                        The conference proceedings will be published in <a href="http:// www.springer.com/lncs">Lecture Notes in Computer Science</a> series, available from <a href="http://www.springer.com">Springer</a>.
                     </p>
                         </p>
                         <p>
@@ -295,7 +295,7 @@ It is anticipated that a limited number travel scholarships will be available on
                         <h1 id="countdown" class="countdown"></h1>
 
                         <a href="https://www.easychair.org/account/signin.cgi?conf=sbp2014" class="btn btn-block btn-info">Submit</a>
-                        
+
                         <hr class="clean">
 
                         <p><b>Checklist:</b><br />
@@ -560,35 +560,35 @@ It is anticipated that a limited number travel scholarships will be available on
 
     // set the date we're counting down to
     var target_date = new Date("Jan 17, 2014 23:59 EST").getTime();
-     
+
     // variables for time units
     var days, hours, minutes, seconds;
-     
+
     // get tag element
     var countdown = document.getElementById("countdown");
-     
+
     // update the tag with id "countdown" every 1 second
     setInterval(function () {
-     
+
         // find the amount of "seconds" between now and target
         var current_date = new Date().getTime();
         var seconds_left = (target_date - current_date) / 1000;
-     
+
         // do some time calculations
         days = parseInt(seconds_left / 86400);
         seconds_left = seconds_left % 86400;
-         
+
         hours = parseInt(seconds_left / 3600);
         seconds_left = seconds_left % 3600;
-         
+
         minutes = parseInt(seconds_left / 60);
         seconds = parseInt(seconds_left % 60);
-         
+
         // format countdown string + set tag value
-        countdown.innerHTML = days + " days, " + hours + " hours left";
-     
+        //countdown.innerHTML = days + " days, " + hours + " hours left";
+
     }, 1000);
-     
+
 </script>
 
 </body>
