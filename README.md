@@ -4,7 +4,8 @@ HTML Files for the SBP Conference
 
 Named folders contain index HTML files. This way the page URL ends up being the folder name, and the web server will serve up the respective index.html file. 
 
-
+```sh
+/
 |---about
 |---awards
 |---cfp
@@ -26,7 +27,7 @@ Named folders contain index HTML files. This way the page URL ends up being the 
 |---submit
 |---travel
 |---tutorial
-
+```
 
 ### Contributions
 
