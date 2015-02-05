@@ -17,7 +17,6 @@ jQuery(document).ready(function() {
 // 	$.getJSON('', function(tweets){
 // 		$("#twitter").html(tz_format_twitter(tweets));
 // 	});
-
 // });
 
 jQuery(document).ready(function($){
